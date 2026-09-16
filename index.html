@@ -6,44 +6,81 @@
 <title>Clicky | تحميل التطبيق</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Arial, sans-serif; }
-  body { background: linear-gradient(160deg, #0d0518 0%, #1a0b2e 50%, #12081f 100%); color: #fff; min-height: 100vh; }
+  body { background: #0D0D0D; color: #F5F0E6; min-height: 100vh; }
   .wrap { max-width: 520px; margin: 0 auto; padding: 32px 20px; }
-  .icon { width: 96px; height: 96px; margin: 24px auto 16px; border-radius: 24px; background: linear-gradient(135deg, #7B2FF2, #A855F7); display: flex; align-items: center; justify-content: center; font-size: 48px; box-shadow: 0 8px 32px rgba(123,47,242,.45); }
-  h1 { text-align: center; font-size: 34px; letter-spacing: 2px; background: linear-gradient(90deg, #A855F7, #e0c3ff); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .sub { text-align: center; color: #b8a6d9; margin: 8px 0 28px; font-size: 15px; }
-  .btn { display: block; text-align: center; text-decoration: none; font-size: 19px; font-weight: bold; padding: 16px; border-radius: 14px; margin: 12px 0; transition: transform .15s, box-shadow .15s; }
+
+  .logo { width: 110px; height: 110px; margin: 24px auto 12px; display: block;
+          border-radius: 28px; box-shadow: 0 0 40px rgba(201,162,39,.25), 0 8px 32px rgba(0,0,0,.6); }
+  h1 { text-align: center; font-size: 34px; letter-spacing: 3px; color: #E8C57A;
+       font-weight: bold; margin-top: 8px; }
+  .sub { text-align: center; color: #9A9A9A; margin: 8px 0 28px; font-size: 15px; }
+
+  .btn { display: block; text-align: center; text-decoration: none; font-size: 18px;
+         font-weight: bold; padding: 16px; border-radius: 28px; margin: 12px 0;
+         transition: transform .15s, box-shadow .15s; }
   .btn:active { transform: scale(.97); }
-  .btn-main { background: linear-gradient(135deg, #7B2FF2, #9333ea); color: #fff; box-shadow: 0 6px 24px rgba(123,47,242,.5); }
-  .btn-alt { background: #241539; color: #c9b3ee; border: 1px solid #4a2d78; }
-  .size { text-align: center; color: #8f7bb3; font-size: 13px; margin-bottom: 28px; }
-  h2 { margin: 36px 0 16px; font-size: 20px; color: #d9c8f5; }
-  .card { background: rgba(255,255,255,.045); border: 1px solid rgba(168,85,247,.22); border-radius: 14px; padding: 16px; margin-bottom: 12px; display: flex; gap: 14px; align-items: flex-start; }
-  .num { min-width: 30px; height: 30px; border-radius: 50%; background: #7B2FF2; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 15px; }
-  .card p { color: #c3b1e0; font-size: 14px; line-height: 1.7; }
-  .wa { display: block; text-align: center; background: #25D366; color: #062b16; font-weight: bold; text-decoration: none; padding: 14px; border-radius: 14px; margin-top: 8px; }
-  footer { text-align: center; color: #6e5a94; font-size: 12px; margin-top: 44px; padding-bottom: 24px; }
+  .btn-main { background: linear-gradient(135deg, #E8C57A, #C9A227); color: #0D0D0D;
+              box-shadow: 0 6px 24px rgba(201,162,39,.35); }
+  .btn-alt { background: #1A1A1A; color: #E8C57A; border: 1px solid #3A3A3A; }
+  .size { text-align: center; color: #9A9A9A; font-size: 13px; margin-bottom: 28px; }
+
+  h2 { margin: 36px 0 16px; font-size: 19px; color: #C9A227; }
+  .card { background: #1A1A1A; border: 1px solid rgba(201,162,39,.2); border-radius: 22px;
+          padding: 18px; margin-bottom: 12px; display: flex; gap: 14px; align-items: flex-start; }
+  .num { min-width: 30px; height: 30px; border-radius: 50%; background: #C9A227; color: #0D0D0D;
+         display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 15px; }
+  .card p { color: #C9C2B4; font-size: 14px; line-height: 1.7; }
+  .card b { color: #F5F0E6; }
+
+  .wa { display: block; text-align: center; background: #1FA855; color: #062b16; font-weight: bold;
+        text-decoration: none; padding: 15px; border-radius: 28px; margin-top: 8px;
+        box-shadow: 0 4px 18px rgba(31,168,85,.25); }
+  footer { text-align: center; color: #6B6B6B; font-size: 12px; margin-top: 44px; padding-bottom: 24px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="icon">👆</div>
+  <img class="logo" src="logo.png" alt="Clicky"
+       onerror="this.outerHTML='<div class=&quot;logo&quot; style=&quot;background:#1A1A1A;display:flex;align-items:center;justify-content:center;font-size:52px&quot;>👆</div>'">
   <h1>CLICKY</h1>
-  <p class="sub">مساعد القبول الذكي — فعّل رخصتك وابدأ خلال دقيقة</p>
+  <p class="sub">مساعد القبول الذكي — أسرع من الجميع</p>
 
-  <a class="btn btn-main" href="Clicky-v1.0.0.apk" download>⬇️ تحميل مباشر (APK)</a>
-  <a class="btn btn-alt" href="https://www.mediafire.com/" target="_blank">🔄 رابط بديل — MediaFire</a>
-  <p class="size">الإصدار v1.0.0</p>
+  <a class="btn btn-main" id="dlMain" href="https://clicky.abomhrem.workers.dev/Clicky-v1.3.0.apk" download>⬇️ تحميل مباشر (APK)</a>
+  <a class="btn btn-alt" id="dlAlt" href="https://abomhrem.github.io/clicky/Clicky-v1.3.0.apk" download>🔄 رابط بديل — GitHub</a>
+  <p class="size" id="verLabel">الإصدار v1.3</p>
 
   <h2>خطوات التثبيت</h2>
-  <div class="card"><div class="num">1</div><p>عند ظهور تحذير <b>Play Protect</b> اضغط <b>«تثبيت على أي حال»</b> — التطبيق آمن وموقّع بمفتاحنا الخاص.</p></div>
-  <div class="card"><div class="num">2</div><p>انتظر اكتمال التحميل، ثم افتح الملف <b>Clicky-v1.0.0.apk</b> من لوحة الإشعارات أو مدير الملفات.</p></div>
-  <div class="card"><div class="num">3</div><p>فعّل <b>«السماح بالتثبيت من مصادر غير معروفة»</b> إذا طُلب منك، ثم اضغط <b>تثبيت</b>. بعد الفتح أدخل رمز الرخصة وفعّل خدمة إمكانية الوصول.</p></div>
+  <div class="card"><div class="num">1</div><p>اضغط <b>«تحميل مباشر»</b> وانتظر اكتمال التحميل. عند ظهور تحذير <b>Play Protect</b> اضغط <b>«تثبيت على أي حال»</b> — التطبيق آمن وموقّع بمفتاحنا الخاص.</p></div>
+  <div class="card"><div class="num">2</div><p>افتح الملف من لوحة الإشعارات أو مدير الملفات، وفعّل <b>«السماح بالتثبيت من مصادر غير معروفة»</b> إذا طُلب منك.</p></div>
+  <div class="card"><div class="num">3</div><p>بعد الفتح، أدخل رمز الرخصة (يصلك عبر واتساب) وفعّل خدمة إمكانية الوصول من إعدادات التطبيق.</p></div>
+  <div class="card"><div class="num">4</div><p>التطبيق يحدث نفسه تلقائياً — عند صدور إصدار جديد ستظهر لك رسالة <b>«تحديث متوفر»</b> عند فتح التطبيق.</p></div>
 
   <h2>تحتاج مساعدة؟</h2>
   <div class="card"><div class="num">؟</div><p>إذا واجهت أي مشكلة في التحميل أو التفعيل، راسلنا مباشرة وسنرد خلال دقائق.</p></div>
-  <a class="wa" href="https://wa.me/9627XXXXXXX" target="_blank">💬 تواصل معنا عبر واتساب</a>
+  <a class="wa" id="waBtn" href="https://wa.me/962777623864?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%AD%D8%AA%D8%A7%D8%AC%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%A9%20%D9%81%D9%8A%20Clicky" target="_blank">💬 تواصل معنا عبر واتساب</a>
 
   <footer>Clicky © 2026 — جميع الحقوق محفوظة</footer>
 </div>
+
+<script>
+(function () {
+  var CONFIG_URL = "https://clicky-83b4d-default-rtdb.asia-southeast1.firebasedatabase.app/config.json";
+  var fallback = {
+    apkUrl: "https://clicky.abomhrem.workers.dev/Clicky-v1.3.0.apk",
+    latestVersion: "1.3",
+    supportUrl: "https://wa.me/962777623864"
+  };
+  fetch(CONFIG_URL).then(function (r) { return r.json(); }).then(function (c) {
+    var url = (c && c.apkUrl) || fallback.apkUrl;
+    var ver = (c && c.latestVersion) || fallback.latestVersion;
+    var sup = (c && c.supportUrl) || fallback.supportUrl;
+    document.getElementById("dlMain").href = url;
+    document.getElementById("verLabel").textContent = "الإصدار v" + ver;
+    if (sup) document.getElementById("waBtn").href = sup;
+    var name = url.split("/").pop();
+    document.getElementById("dlAlt").href = "https://abomhrem.github.io/clicky/" + name;
+  }).catch(function () { /* fallbacks already in place */ });
+})();
+</script>
 </body>
 </html>
